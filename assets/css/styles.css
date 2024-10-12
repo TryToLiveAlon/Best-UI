@@ -193,14 +193,35 @@ nav li:first-child{
 }
 
 .home__button {
-  display: inline-block;
-  color: var(--white-color);
+  position: relative;
+  background: #161a20;
+  justify-content: center;
+  border: none;
+  width: 150px;
+  height: 66px;
+  justify-content: center;
+  color: #ccc;
   padding: 1.125rem 2rem;
-  border-radius: .5rem;
+  border-radius: 33px;
+  display: flex;
+  align-items: center;
+
 }
 
+.home__button::after{
+  content: '';
+  position: absolute;
+  height: 69px;
+  width: 154px;
+  border-radius: 33px;
+  background-image:linear-gradient(to bottom right, #008acf , #e100ff);
+  z-index: -1;
+}
+
+
 .home__button:hover {
-  background-color: var(--first-color-darken);
+  z-index: -2;
+
 }
 
 /* 3D Model styling */
@@ -213,7 +234,7 @@ nav li:first-child{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
 }
  .both3 {
   color: gray;
@@ -228,35 +249,49 @@ nav li:first-child{
   flex: 1;
   padding-right: 25px;
   max-width: 600px;
+  padding: 20px;
+}
+
+.hr1 {
+  margin-left: 0;
+  width: 600px;
+}
+
+.lear1 {
+  margin-left: 20px;
+  
 }
 
 .image-section {
-  margin-block-start: 200px;
-  max-width: 100%;
-  height: auto;
+  margin-top: 100px;
+  width: 600px;
+  height: 500px;
+  border-radius: 33px;
+  background: linear-gradient(to right, #d9a8ff, #a8d9ff)
+
+
 }
+
+.image-section img {
+  padding-right: 0;
+  margin-top: 50px;
+  margin-left: 60px;
+  width: 500px;
+  height: 400px;
+  position:absolute;
+  border-radius: 33px;
+
+}
+
 .Botpic {
   width: 80px;
   height: 60px;
   margin-left: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
+.fa-solid {
+  margin-left: 140px;
+}
 
 
 
@@ -273,7 +308,21 @@ nav li:first-child{
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -463,4 +512,4 @@ hr {
   .col:nth-child(2),.col:nth-child(3){
     flex-basis: 100%;
   }
-}
+      }
