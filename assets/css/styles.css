@@ -209,36 +209,66 @@ nav li:first-child{
   height: 289px;
 }
 
-.both3 {
-  margin-left: 120px;
+.bot-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+ .both3 {
   color: gray;
+  margin-left: 25px;
+ }
+
+ .bothead {
+  font-size: 2.6rem;
+ }
+
+.text-section {
+  flex: 1;
+  padding-right: 25px;
+  max-width: 600px;
 }
 
+.image-section {
+  margin-block-start: 200px;
+  max-width: 100%;
+  height: auto;
+}
 .Botpic {
   width: 80px;
   height: 60px;
-  margin-left: 120px;
+  margin-left: 25px;
 }
 
 
 
 
 
- .bot_p{
-  color: #ccc;
-  margin-left: 120px;
-  text-align: justify;
-  font-size: 22;
-  width: 345px;
-  border-radius: 13px;
-  border: 2px dotted ;
- }
+
+
+
+
+
+
+
+
  
-.bothead {
-  font-size: 3rem;
-  margin-left: 120px;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
