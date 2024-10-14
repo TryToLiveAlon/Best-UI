@@ -89,80 +89,95 @@ img {
 }
 
 /*===== NAVIGATION =====*/
-nav{
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-}
-nav ul{
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav li{
-  height: 50px;
-}
-nav a{
-  height: 100%;
-  padding: 0 30px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: var(--white-color);
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-.logo-name{
-  font-family: 'Agustina', 'Rubik', sans-serif;
-  font-size: 1.2rem;
-  
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
 
+.navbar .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
 
+.navbar .buttons {
+    display: flex;
+    gap: 10px;
+}
 
-nav a:hover{
-  background-color: #251627;
+.navbar .buttons button {
+    padding: 8px 16px;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
-nav li:first-child{
-  margin-right: auto;
+
+.navbar .buttons button:hover {
+    background-color: #777;
 }
-.sidebar{
-  position: fixed;
-  top: 0; 
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.sidebar li{
-  width: 100%;
-}
-.sidebar a{
-  width: 100%;
-}
-.menu-button{
-  display: none;
-}
-@media(max-width: 800px){
-  .hideOnMobile{
+
+/* Responsive styling */
+.hamburger-menu {
     display: none;
-  }
-  .menu-button{
-    display: block;
-  }
+    cursor: pointer;
 }
-@media(max-width: 400px){
-  .sidebar{
-    width: 100%;
-  }
+
+@media (max-width: 768px) {
+    .navbar .menu, .navbar .buttons {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navbar.active .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar.active .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .navbar.active .menu a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.active .buttons button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
+
 /*===== HOME SECTION =====*/
 .home{
   overflow: hidden;
