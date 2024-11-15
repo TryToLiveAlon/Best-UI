@@ -188,33 +188,6 @@ img {
   margin-top: 10px;
 }
 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-                                                                 
-
-
-
-                                                                                          
-
-
 .navbar .buttons {
     display: flex;
     gap: 10px;
@@ -423,35 +396,6 @@ img {
   flex: 1;
   padding: 10px;
 }
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
 
 @media screen and (min-width: 1024px) {
   .bd-grid {
