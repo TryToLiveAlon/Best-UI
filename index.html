@@ -9,7 +9,7 @@
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700"
   />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 <body class="root-body">
@@ -57,6 +57,70 @@
       </section>
     </main>
   </div>
+  <div class="content-container">
+    <!-- Image Section -->
+    <div class="image-section"></div>
+
+    <!-- Text Section -->
+    <div class="text-section">
+      <div class="text-content">
+        <h1 class="title">Introducing Acme for Startups</h1>
+        <h2 class="subtitle">
+          Acme for Startups is a new program that offers powerful tools and resources to help startups grow their business. We're excited to share these benefits with you.
+        </h2>
+      </div>
+      <button class="learn-more-btn">Learn more</button>
+    </div>
+  </div>
+  
+    <!-- Second Section: Image Right, Text Left -->
+    <div class="section">
+      <div class="image-section-right"></div>
+      <div class="text-section">
+        <div class="text-content">
+          <h1 class="title">Scale Your Business</h1>
+          <p class="subtitle">
+            Grow and expand your business with our powerful tools and expert guidance. Join now!
+          </p>
+          <button class="learn-more-btn">Join Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+              
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/676e1cfa-cd46-4698-aeab-3066e5db8533.png");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Introducing Acme Co's new product
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Our latest product is a game-changer. We have worked hard to bring you the best experience possible. It is designed to be user-friendly and powerful, making
+                      it perfect for anyone who needs to get things done quickly and efficiently. With a sleek and modern interface, you can easily navigate the app and find what
+                      you need without any hassle.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#39E079] text-[#141414] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Learn more</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
   <script src="scripts.js"></script>
 </body>
 </html>
